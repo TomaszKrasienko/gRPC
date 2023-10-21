@@ -1,0 +1,25 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "gRPC.ServerStreaming.Server";
+
+package ServerStreaming.Stacks;
+
+
+
+service StocksServerStreaming {
+  rpc SubscribeStocks (Empty) returns (stream OverviewResponse);
+}
+
+message Empty {
+}
+
+message OverviewResponse {
+  google.protobuf.Timestamp releaseDate = 1;
+  StockResponse stock = 2;
+}
+
+message StockResponse {
+  string stockName = 1;
+  double value = 2;
+}
