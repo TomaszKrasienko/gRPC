@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPC.ClientStreaming.Server";
+
+package ClientStreaming.ExamsResults;
+
+service ExamResultsService {
+  rpc SendResults(stream ExamTaskAnswerRequest) returns (ExamTaskResultsResponse);
+}
+
+message ExamTaskAnswerRequest {
+  int32 TaskNumber = 1;
+  bool Result = 2;
+}
+
+message ExamTaskResultsResponse {
+  int32 SummaryResult = 1;
+  repeated AnswersResult Details = 2;
+}
+
+message AnswersResult {
+  int32 TaskNumber = 1;
+  bool ProvidedResult = 2;
+  bool IsValid = 3;
+} 
