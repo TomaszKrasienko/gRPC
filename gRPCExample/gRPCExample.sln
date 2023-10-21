@@ -12,6 +12,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC.ServerStreaming.Client
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC.ServerStreaming.Server", "ServerStreaming\gRPC.ServerStreaming.Server\gRPC.ServerStreaming.Server.csproj", "{90B6B983-18B1-473B-8A52-460CC2DEBB39}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClientStreaming", "ClientStreaming", "{1D1C5DA7-26E8-4E4B-A9EE-815E14473DAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC.ClientStreaming.Server", "ClientStreaming\gRPC.ClientStreaming.Server\gRPC.ClientStreaming.Server.csproj", "{16BB2ECC-9CBF-44A5-A6D1-D341E1B5C77F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +26,7 @@ Global
 		{2FD944A0-3E90-4F80-A469-22C03C5C5D83} = {0B2DF6E7-E254-4F71-8B6C-59F0E2CA25E1}
 		{1659DA48-7854-4E9A-A4C5-F579B8766B77} = {C4C4AC19-5093-45E1-8A8D-C27168C7502C}
 		{90B6B983-18B1-473B-8A52-460CC2DEBB39} = {C4C4AC19-5093-45E1-8A8D-C27168C7502C}
+		{16BB2ECC-9CBF-44A5-A6D1-D341E1B5C77F} = {1D1C5DA7-26E8-4E4B-A9EE-815E14473DAC}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DC9F39ED-0423-4A0C-B2F0-FFDFCA8B2E1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -40,5 +45,9 @@ Global
 		{90B6B983-18B1-473B-8A52-460CC2DEBB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90B6B983-18B1-473B-8A52-460CC2DEBB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90B6B983-18B1-473B-8A52-460CC2DEBB39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16BB2ECC-9CBF-44A5-A6D1-D341E1B5C77F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16BB2ECC-9CBF-44A5-A6D1-D341E1B5C77F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16BB2ECC-9CBF-44A5-A6D1-D341E1B5C77F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16BB2ECC-9CBF-44A5-A6D1-D341E1B5C77F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
