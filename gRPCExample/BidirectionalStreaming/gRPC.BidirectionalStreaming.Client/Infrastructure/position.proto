@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option csharp_namespace = "gRPC.BidirectionalStreaming.Server";
+
+package gRPC.BidirectionalStreaming;
+
+service PositionService {
+  rpc ShowResults (stream PositionRequest) returns (stream PositionResponse);
+}
+
+message PositionRequest {
+  string direction = 1;
+  int32 distance = 2;
+}
+
+message PositionResponse {
+  string xPosition = 1;
+  string yPosition = 2;
+}
