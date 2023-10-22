@@ -14,7 +14,7 @@ message ExamTaskAnswerRequest {
 }
 
 message ExamTaskResultsResponse {
-  int32 SummaryResult = 1;
+  double SummaryResult = 1;
   repeated AnswersResult Details = 2;
 }
 
